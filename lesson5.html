@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Past Simple - Easy English</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .sound-btn {
+            border: none;
+            background: transparent;
+            padding: 0;
+            margin-right: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            width: auto;
+            box-shadow: none;
+        }
+
+        .sound-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .quiz-question {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .options button {
+            width: 100%;
+        }
+
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+
+        .wrong {
+            color: red;
+            font-weight: bold;
+        }
+
+        #completeButton {
+            margin-top: 15px;
+        }
+
+        #completeButton:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="card">
+
+        <!-- ========================= -->
+        <!-- Header -->
+        <!-- ========================= -->
+
+        <h1>Easy English</h1>
+
+        <p>
+            with Abu Saif 📚
+        </p>
+
+        <h2>5️⃣ Past Simple</h2>
+
+        <p>
+            الماضي البسيط
+        </p>
+
+
+        <!-- ========================= -->
+        <!-- Introduction -->
+        <!-- ========================= -->
+
+        <div class="lesson-note">
+
+            <h2>📚 What is Past Simple?</h2>
+
+            <p>
+                We use the Past Simple to talk about
+                actions that happened in the past.
+            </p>
+
+            <p>
+                نستخدم الماضي البسيط للتحدث عن
+                أفعال حدثت في الماضي.
+            </p>
+
+            <p>
+                Examples:
+            </p>
+
+            <p>
+                I visited my friend yesterday.
+            </p>
+
+            <p>
+                She watched TV last night.
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Regular Verbs -->
+        <!-- ========================= -->
+
+        <div class="lesson-card">
+
+            <h2>🧩 Regular Verbs</h2>
+
+            <p>
+                Many regular verbs form the past
+                by adding <strong>-ed</strong>.
+            </p>
+
+            <p>
+                play → played
+            </p>
+
+            <p>
+                work → worked
+            </p>
+
+            <p>
+                watch → watched
+            </p>
+
+            <p>
+                visit → visited
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Examples -->
+        <!-- ========================= -->
+
+        <div class="examples">
+
+            <h2>💬 Examples</h2>
+
+            <p>
+                I played football yesterday.
+
+                <button
+                    type="button"
+                    class="sound-btn"
+                    onclick="speakEnglish('I played football yesterday.')">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                She watched a movie last night.
+
+                <button
+                    type="button"
+                    class="sound-btn"
+                    onclick="speakEnglish('She watched a movie last night.')">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                We visited our friend.
+
+                <button
+                    type="button"
+                    class="sound-btn"
+                    onclick="speakEnglish('We visited our friend.')">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                They worked yesterday.
+
+                <button
+                    type="button"
+                    class="sound-btn"
+                    onclick="speakEnglish('They worked yesterday.')">
+                    🔊
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Irregular Verbs -->
+        <!-- ========================= -->
+
+        <div class="lesson-note">
+
+            <h2>⭐ Irregular Verbs</h2>
+
+            <p>
+                Some verbs have a special past form.
+            </p>
+
+            <p>
+                go → went
+            </p>
+
+            <p>
+                eat → ate
+            </p>
+
+            <p>
+                see → saw
+            </p>
+
+            <p>
+                come → came
+            </p>
+
+            <p>
+                have → had
+            </p>
+
+            <p>
+                drink → drank
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Negative -->
+        <!-- ========================= -->
+
+        <div class="lesson-note">
+
+            <h2>❌ Negative</h2>
+
+            <p>
+                We use <strong>did not</strong>
+                or <strong>didn't</strong>.
+            </p>
+
+            <p>
+                I didn't play football.
+            </p>
+
+            <p>
+                She didn't watch TV.
+            </p>
+
+            <p>
+                They didn't go to school.
+            </p>
+
+            <p>
+                Remember:
+                after <strong>didn't</strong>,
+                use the base verb.
+            </p>
+
+            <p>
+                I didn't <strong>play</strong>. ✅
+            </p>
+
+            <p>
+                I didn't <strong>played</strong>. ❌
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Questions -->
+        <!-- ========================= -->
+
+        <div class="lesson-note">
+
+            <h2>❓ Questions</h2>
+
+            <p>
+                We use <strong>Did</strong>
+                to ask questions.
+            </p>
+
+            <p>
+                Did you play football?
+            </p>
+
+            <p>
+                Did she watch TV?
+            </p>
+
+            <p>
+                Did they go to school?
+            </p>
+
+            <h3>
+                Short Answers
+            </h3>
+
+            <p>
+                Yes, I did.
+            </p>
+
+            <p>
+                No, I didn't.
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Time Expressions -->
+        <!-- ========================= -->
+
+        <div class="lesson-card">
+
+            <h2>⏰ Time Expressions</h2>
+
+            <p>
+                yesterday = أمس
+            </p>
+
+            <p>
+                last night = الليلة الماضية
+            </p>
+
+            <p>
+                last week = الأسبوع الماضي
+            </p>
+
+            <p>
+                last year = السنة الماضية
+            </p>
+
+            <p>
+                two days ago = منذ يومين
+            </p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Quiz -->
+        <!-- ========================= -->
+
+        <div class="quiz">
+
+            <h2>🧠 Past Simple Quiz</h2>
+
+            <p id="pastProgress"></p>
+
+            <p
+                id="pastQuestion"
+                class="quiz-question">
+            </p>
+
+            <div
+                id="pastOptions"
+                class="options">
+            </div>
+
+            <p id="pastResult"></p>
+
+            <button
+                id="nextPastButton"
+                onclick="nextPastQuestion()">
+
+                Next Question ➡️
+
+            </button>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Complete Lesson -->
+        <!-- ========================= -->
+
+        <div class="lesson-note">
+
+            <h2>🏆 Finish Lesson 5</h2>
+
+            <p>
+                بعد الانتهاء من الاختبار،
+                اضغط على الزر لتسجيل الدرس كمكتمل.
+            </p>
+
+            <button
+                id="completeButton"
+                onclick="completeLesson5()"
+                disabled>
+
+                🔒 Complete Lesson 5
+
+            </button>
+
+            <p id="completionMessage"></p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- Navigation -->
+        <!-- ========================= -->
+
+        <div class="navigation">
+
+            <button
+                onclick="location.href='lesson4.html'">
+
+                ⬅️ Previous Lesson
+
+            </button>
+
+
+            <button
+                onclick="location.href='index.html'">
+
+                🏠 Lessons
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- JavaScript -->
+    <!-- ========================= -->
+
+    <script>
+
+        // =====================================
+        // English Pronunciation
+        // =====================================
+
+        function speakEnglish(text) {
+
+            if (!("speechSynthesis" in window)) {
+
+                alert(
+                    "Sorry, your browser does not support voice pronunciation."
+                );
+
+                return;
+            }
+
+            window.speechSynthesis.cancel();
+
+            const speech =
+                new SpeechSynthesisUtterance(text);
+
+            speech.lang = "en-US";
+            speech.rate = 0.9;
+            speech.pitch = 1;
+
+            window.speechSynthesis.speak(speech);
+        }
+
+
+        // =====================================
+        // Past Simple Questions
+        // =====================================
+
+        const pastQuestions = [
+
+            {
+                question:
+                    "I _____ football yesterday.",
+
+                options:
+                    ["play", "played", "playing"],
+
+                answer:
+                    "played"
+            },
+
+            {
+                question:
+                    "She _____ TV last night.",
+
+                options:
+                    ["watch", "watched", "watching"],
+
+                answer:
+                    "watched"
+            },
+
+            {
+                question:
+                    "They _____ to school yesterday.",
+
+                options:
+                    ["go", "went", "going"],
+
+                answer:
+                    "went"
+            },
+
+            {
+                question:
+                    "He _____ coffee yesterday.",
+
+                options:
+                    ["drink", "drank", "drinking"],
+
+                answer:
+                    "drank"
+            },
+
+            {
+                question:
+                    "We _____ our friend last week.",
+
+                options:
+                    ["visit", "visited", "visiting"],
+
+                answer:
+                    "visited"
+            },
+
+            {
+                question:
+                    "She _____ a movie yesterday.",
+
+                options:
+                    ["watch", "watched", "watching"],
+
+                answer:
+                    "watched"
+            },
+
+            {
+                question:
+                    "I _____ my homework last night.",
+
+                options:
+                    ["finish", "finished", "finishing"],
+
+                answer:
+                    "finished"
+            },
+
+            {
+                question:
+                    "They _____ dinner two hours ago.",
+
+                options:
+                    ["eat", "ate", "eating"],
+
+                answer:
+                    "ate"
+            },
+
+            {
+                question:
+                    "He _____ to the park yesterday.",
+
+                options:
+                    ["go", "went", "going"],
+
+                answer:
+                    "went"
+            },
+
+            {
+                question:
+                    "We _____ a great movie last night.",
+
+                options:
+                    ["see", "saw", "seeing"],
+
+                answer:
+                    "saw"
+            }
+
+        ];
+
+
+        // =====================================
+        // Quiz Variables
+        // =====================================
+
+        let currentPastQuestion = 0;
+
+        let pastScore = 0;
+
+        let pastAnswered = false;
+
+        let pastQuizFinished = false;
+
+
+        // =====================================
+        // Show Question
+        // =====================================
+
+        function showPastQuestion() {
+
+            const question =
+                pastQuestions[currentPastQuestion];
+
+            if (!question) {
+                return;
+            }
+
+            pastAnswered = false;
+
+
+            const progress =
+                document.getElementById(
+                    "pastProgress"
+                );
+
+            const questionElement =
+                document.getElementById(
+                    "pastQuestion"
+                );
+
+            const options =
+                document.getElementById(
+                    "pastOptions"
+                );
+
+            const result =
+                document.getElementById(
+                    "pastResult"
+                );
+
+            const nextButton =
+                document.getElementById(
+                    "nextPastButton"
+                );
+
+
+            progress.textContent =
+                "Question " +
+                (currentPastQuestion + 1) +
+                " / " +
+                pastQuestions.length;
+
+
+            questionElement.textContent =
+                question.question;
+
+
+            options.innerHTML = "";
+
+            result.textContent = "";
+
+
+            nextButton.style.display = "inline-block";
+
+            nextButton.textContent =
+                "Next Question ➡️";
+
+
+            question.options.forEach(
+                function(option) {
+
+                    const button =
+                        document.createElement(
+                            "button"
+                        );
+
+                    button.type = "button";
+
+                    button.textContent = option;
+
+
+                    button.onclick =
+                        function() {
+
+                            checkPastAnswer(
+                                option,
+                                button
+                            );
+
+                        };
+
+
+                    options.appendChild(button);
+
+                }
+            );
+        }
+
+
+        // =====================================
+        // Check Answer
+        // =====================================
+
+        function checkPastAnswer(
+            answer,
+            selectedButton
+        ) {
+
+            if (pastAnswered) {
+                return;
+            }
+
+            pastAnswered = true;
+
+
+            const question =
+                pastQuestions[
+                    currentPastQuestion
+                ];
+
+
+            const result =
+                document.getElementById(
+                    "pastResult"
+                );
+
+
+            if (answer === question.answer) {
+
+                result.textContent =
+                    "✅ Correct! Well done!";
+
+                result.className =
+                    "correct";
+
+                pastScore++;
+
+            } else {
+
+                result.textContent =
+                    "❌ Wrong answer. The correct answer is: " +
+                    question.answer;
+
+                result.className =
+                    "wrong";
+            }
+
+
+            // تعطيل جميع الخيارات
+            const buttons =
+                document.querySelectorAll(
+                    "#pastOptions button"
+                );
+
+            buttons.forEach(
+                function(button) {
+
+                    button.disabled = true;
+
+                }
+            );
+
+        }
+
+
+        // =====================================
+        // Next Question
+        // =====================================
+
+        function nextPastQuestion() {
+
+            if (!pastAnswered) {
+
+                document.getElementById(
+                    "pastResult"
+                ).textContent =
+                    "👆 Please choose an answer first!";
+
+                document.getElementById(
+                    "pastResult"
+                ).className =
+                    "wrong";
+
+                return;
+            }
+
+
+            currentPastQuestion++;
+
+
+            if (
+                currentPastQuestion <
+                pastQuestions.length
+            ) {
+
+                showPastQuestion();
+
+            } else {
+
+                finishPastQuiz();
+
+            }
+
+        }
+
+
+        // =====================================
+        // Finish Quiz
+        // =====================================
+
+        function finishPastQuiz() {
+
+            pastQuizFinished = true;
+
+
+            const progress =
+                document.getElementById(
+                    "pastProgress"
+                );
+
+            const question =
+                document.getElementById(
+                    "pastQuestion"
+                );
+
+            const options =
+                document.getElementById(
+                    "pastOptions"
+                );
+
+            const result =
+                document.getElementById(
+                    "pastResult"
+                );
+
+            const nextButton =
+                document.getElementById(
+                    "nextPastButton"
+                );
+
+            const completeButton =
+                document.getElementById(
+                    "completeButton"
+                );
+
+
+            progress.textContent =
+                "Quiz Complete 🎉";
+
+
+            question.textContent =
+                "Excellent! You finished the Past Simple Quiz!";
+
+
+            options.innerHTML = "";
+
+
+            result.className = "";
+
+
+            result.textContent =
+                "Your Score: " +
+                pastScore +
+                " / " +
+                pastQuestions.length;
+
+
+            nextButton.style.display = "none";
+
+
+            // فتح زر إكمال الدرس
+            completeButton.disabled = false;
+
+            completeButton.textContent =
+                "✅ Complete Lesson 5";
+
+
+            // حفظ نتيجة الاختبار
+            localStorage.setItem(
+                "lesson5Score",
+                pastScore
+            );
+
+        }
+
+
+        // =====================================
+        // Complete Lesson 5
+        // =====================================
+
+        function completeLesson5() {
+
+            if (!pastQuizFinished) {
+
+                alert(
+                    "Please finish the quiz first."
+                );
+
+                return;
+            }
+
+
+            // تسجيل الدرس كمكتمل
+            localStorage.setItem(
+                "lesson5Completed",
+                "true"
+            );
+
+
+            const message =
+                document.getElementById(
+                    "completionMessage"
+                );
+
+
+            message.textContent =
+                "🎉 Excellent! Lesson 5 completed successfully!";
+
+
+            message.className =
+                "correct";
+
+
+            const button =
+                document.getElementById(
+                    "completeButton"
+                );
+
+
+            button.textContent =
+                "✅ Lesson 5 Completed";
+
+
+            button.disabled = true;
+
+        }
+
+
+        // =====================================
+        // Check Previous Completion
+        // =====================================
+
+        function checkLesson5Status() {
+
+            const completed =
+                localStorage.getItem(
+                    "lesson5Completed"
+                );
+
+
+            if (completed === "true") {
+
+                const button =
+                    document.getElementById(
+                        "completeButton"
+                    );
+
+                const message =
+                    document.getElementById(
+                        "completionMessage"
+                    );
+
+
+                button.disabled = true;
+
+                button.textContent =
+                    "✅ Lesson 5 Completed";
+
+
+                message.textContent =
+                    "🎉 You have already completed Lesson 5.";
+
+            }
+
+        }
+
+
+        // =====================================
+        // Start Lesson
+        // =====================================
+
+        showPastQuestion();
+
+        checkLesson5Status();
+
+    </script>
+
+</body>
+
+</html>

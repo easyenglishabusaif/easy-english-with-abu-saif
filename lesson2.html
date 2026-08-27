@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verb to Be - Easy English</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* زر الصوت الصغير للأمثلة فقط */
+        .sound-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-left: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            vertical-align: middle;
+            line-height: 1;
+        }
+
+        .sound-btn:hover {
+            transform: scale(1.15);
+        }
+
+        .sound-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Easy English</h1>
+
+        <p>
+            with Abu Saif 📚
+        </p>
+
+
+        <!-- Lesson Title -->
+
+        <h2>2️⃣ Verb to Be</h2>
+
+        <p>
+            الفعل <strong>to be</strong> في المضارع له ثلاث صور:
+            <strong>am / is / are</strong>
+        </p>
+
+
+        <!-- Verb to Be Table -->
+
+        <table>
+
+            <tr>
+                <th>Verb</th>
+                <th>Pronoun</th>
+                <th>Example</th>
+                <th>المعنى</th>
+            </tr>
+
+            <tr>
+                <td>am</td>
+                <td>I</td>
+                <td>I am a student.</td>
+                <td>أنا طالب.</td>
+            </tr>
+
+            <tr>
+                <td>is</td>
+                <td>He</td>
+                <td>He is happy.</td>
+                <td>هو سعيد.</td>
+            </tr>
+
+            <tr>
+                <td>is</td>
+                <td>She</td>
+                <td>She is a teacher.</td>
+                <td>هي معلمة.</td>
+            </tr>
+
+            <tr>
+                <td>is</td>
+                <td>It</td>
+                <td>It is a cat.</td>
+                <td>إنها قطة.</td>
+            </tr>
+
+            <tr>
+                <td>are</td>
+                <td>You</td>
+                <td>You are happy.</td>
+                <td>أنت سعيد.</td>
+            </tr>
+
+            <tr>
+                <td>are</td>
+                <td>We</td>
+                <td>We are friends.</td>
+                <td>نحن أصدقاء.</td>
+            </tr>
+
+            <tr>
+                <td>are</td>
+                <td>They</td>
+                <td>They are students.</td>
+                <td>هم طلاب.</td>
+            </tr>
+
+        </table>
+
+
+        <!-- Easy Rule -->
+
+        <div class="lesson-note">
+
+            <h2>💡 Easy Rule</h2>
+
+            <p>
+                <strong>I → am</strong>
+            </p>
+
+            <p>
+                <strong>He / She / It → is</strong>
+            </p>
+
+            <p>
+                <strong>You / We / They → are</strong>
+            </p>
+
+        </div>
+
+
+        <!-- Examples -->
+
+        <div class="examples">
+
+            <h2>✍️ Examples</h2>
+
+            <p>
+                I am Abu Saif.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('I am Abu Saif.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                She is a teacher.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('She is a teacher.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                He is my brother.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('He is my brother.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                We are friends.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('We are friends.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                They are students.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('They are students.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- Negative -->
+
+        <div class="lesson-note">
+
+            <h2>❌ Negative</h2>
+
+            <p>I am not a student.</p>
+
+            <p>He is not tired.</p>
+
+            <p>She is not a doctor.</p>
+
+            <p>They are not ready.</p>
+
+        </div>
+
+
+        <!-- Questions -->
+
+        <div class="lesson-note">
+
+            <h2>❓ Questions</h2>
+
+            <p>Am I late?</p>
+
+            <p>Is he a teacher?</p>
+
+            <p>Is she happy?</p>
+
+            <p>Are they students?</p>
+
+        </div>
+
+
+        <!-- Quiz -->
+
+        <div class="quiz">
+
+            <h2>🧠 Verb to Be Quiz</h2>
+
+            <p id="verbProgress"></p>
+
+            <p id="verbQuestion"></p>
+
+            <div
+                id="verbOptions"
+                class="options">
+            </div>
+
+            <p id="verbResult"></p>
+
+            <button onclick="nextVerbQuestion()">
+                Next Question ➡️
+            </button>
+
+        </div>
+
+
+        <!-- Complete Lesson -->
+
+        <div class="lesson-note">
+
+            <h2>🏆 Finish Lesson 2</h2>
+
+            <p>
+                عندما تنتهي من دراسة الدرس والاختبار،
+                اضغط على الزر لتسجيل الدرس كمكتمل.
+            </p>
+
+            <button onclick="completeLesson2()">
+                ✅ Complete Lesson 2
+            </button>
+
+            <p id="completionMessage"></p>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <div class="navigation">
+
+            <button onclick="location.href='lesson1.html'">
+                ⬅️ Previous Lesson
+            </button>
+
+            <button onclick="location.href='index.html'">
+                🏠 Lessons
+            </button>
+
+            <button onclick="location.href='lesson3.html'">
+                Next Lesson ➡️
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
+
+    <!-- Start Lesson 2 Quiz -->
+
+    <script>
+        showVerbQuestion();
+    </script>
+
+
+    <!-- Lesson 2 Progress -->
+
+    <script>
+
+        function completeLesson2() {
+
+            localStorage.setItem(
+                "lesson2Completed",
+                "true"
+            );
+
+            document.getElementById(
+                "completionMessage"
+            ).innerHTML =
+                "🎉 Excellent! Lesson 2 completed!";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

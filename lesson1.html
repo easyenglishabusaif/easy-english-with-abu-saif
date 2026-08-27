@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronouns - Easy English</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* زر الصوت الصغير */
+        .sound-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-left: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            vertical-align: middle;
+            line-height: 1;
+        }
+
+        .sound-btn:hover {
+            transform: scale(1.15);
+        }
+
+        .sound-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* منع ظهور الزر كزر كبير داخل الجدول */
+        table .sound-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Easy English</h1>
+
+        <p>
+            with Abu Saif 📚
+        </p>
+
+        <h2>1️⃣ Pronouns</h2>
+
+        <p>
+            الضمائر في اللغة الإنجليزية
+        </p>
+
+
+        <!-- Pronouns Table -->
+
+        <table>
+
+            <tr>
+                <th>Pronoun</th>
+                <th>المعنى</th>
+                <th>Example</th>
+            </tr>
+
+            <tr>
+                <td>I</td>
+                <td>أنا</td>
+                <td>
+                    I am a student.
+                    <button class="sound-btn"
+                        onclick="speak('I am a student.')"
+                        aria-label="Listen">
+                        🔊
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>You</td>
+                <td>أنت / أنتم</td>
+                <td>
+                    You are happy.
+                    <button class="sound-btn"
+                        onclick="speak('You are happy.')"
+                        aria-label="Listen">
+                        🔊
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>He</td>
+                <td>هو</td>
+                <td>
+                    He is a teacher.
+                    <button class="sound-btn"
+                        onclick="speak('He is a teacher.')"
+                        aria-label="Listen">
+                        🔊
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>She</td>
+                <td>هي</td>
+                <td>
+                    She is a doctor.
+                    <button class="sound-btn"
+                        onclick="speak('She is a doctor.')"
+                        aria-label="Listen">
+                        🔊
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>It</td>
+                <td>لغير العاقل</td>
+                <td>
+                    It is a cat.
+                    <button class="sound-btn"
+                        onclick="speak('It is a cat.')"
+                        aria-label="Listen">
+                        🔊
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>We</td>
+                <td>نحن</td>
+                <td>
+                    We are friends.
+                    <button class="sound-btn"
+                        onclick="speak('We are friends.')"
+                        aria-label="Listen">
+                        🔊
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>They</td>
+                <td>هم / هن</td>
+                <td>
+                    They are students.
+                    <button class="sound-btn"
+                        onclick="speak('They are students.')"
+                        aria-label="Listen">
+                        🔊
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+
+        <!-- Pronouns -->
+
+        <div class="examples">
+
+            <h2>🔊 Pronouns</h2>
+
+            <p>
+                I
+                <button class="sound-btn"
+                    onclick="speak('I')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                You
+                <button class="sound-btn"
+                    onclick="speak('You')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                He
+                <button class="sound-btn"
+                    onclick="speak('He')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                She
+                <button class="sound-btn"
+                    onclick="speak('She')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                It
+                <button class="sound-btn"
+                    onclick="speak('It')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                We
+                <button class="sound-btn"
+                    onclick="speak('We')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                They
+                <button class="sound-btn"
+                    onclick="speak('They')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- Examples -->
+
+        <div class="examples">
+
+            <h2>💡 Examples</h2>
+
+            <p>
+                I am Abu Saif.
+                <button class="sound-btn"
+                    onclick="speak('I am Abu Saif.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                She is a teacher.
+                <button class="sound-btn"
+                    onclick="speak('She is a teacher.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                He is my brother.
+                <button class="sound-btn"
+                    onclick="speak('He is my brother.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                We are friends.
+                <button class="sound-btn"
+                    onclick="speak('We are friends.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                They are students.
+                <button class="sound-btn"
+                    onclick="speak('They are students.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- Quiz -->
+
+        <div class="quiz">
+
+            <h2>🧠 Pronouns Quiz</h2>
+
+            <p id="pronounProgress"></p>
+
+            <p id="pronounQuestion"></p>
+
+            <div id="pronounOptions" class="options">
+            </div>
+
+            <p id="pronounResult"></p>
+
+            <button onclick="nextPronounQuestion()">
+                Next Question ➡️
+            </button>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <div class="navigation">
+
+            <button onclick="location.href='index.html'">
+                🏠 Lessons
+            </button>
+
+            <button onclick="location.href='lesson2.html'">
+                Next Lesson ➡️
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        /* =========================
+           English Pronunciation
+           ========================= */
+
+        function speak(text) {
+
+            if (!("speechSynthesis" in window)) {
+
+                alert(
+                    "Sorry, your browser does not support voice pronunciation."
+                );
+
+                return;
+            }
+
+            window.speechSynthesis.cancel();
+
+            const speech =
+                new SpeechSynthesisUtterance(text);
+
+            speech.lang = "en-US";
+            speech.rate = 0.85;
+            speech.pitch = 1;
+
+            window.speechSynthesis.speak(speech);
+        }
+
+
+        /* =========================
+           Pronouns Quiz
+           ========================= */
+
+        const pronounQuestions = [
+
+            {
+                question: "_____ am a student.",
+                options: [
+                    "I",
+                    "He",
+                    "They"
+                ],
+                answer: "I"
+            },
+
+            {
+                question: "_____ is a teacher.",
+                options: [
+                    "She",
+                    "We",
+                    "They"
+                ],
+                answer: "She"
+            },
+
+            {
+                question: "_____ are friends.",
+                options: [
+                    "He",
+                    "We",
+                    "It"
+                ],
+                answer: "We"
+            },
+
+            {
+                question: "_____ is my brother.",
+                options: [
+                    "He",
+                    "They",
+                    "We"
+                ],
+                answer: "He"
+            },
+
+            {
+                question: "_____ are students.",
+                options: [
+                    "It",
+                    "They",
+                    "She"
+                ],
+                answer: "They"
+            }
+
+        ];
+
+
+        let currentPronounQuestion = 0;
+
+
+        function showPronounQuestion() {
+
+            const question =
+                pronounQuestions[
+                    currentPronounQuestion
+                ];
+
+
+            document.getElementById(
+                "pronounProgress"
+            ).innerHTML =
+                "Question "
+                +
+                (currentPronounQuestion + 1)
+                +
+                " / "
+                +
+                pronounQuestions.length;
+
+
+            document.getElementById(
+                "pronounQuestion"
+            ).innerHTML =
+                question.question;
+
+
+            const options =
+                document.getElementById(
+                    "pronounOptions"
+                );
+
+
+            options.innerHTML = "";
+
+
+            question.options.forEach(
+                function(option) {
+
+                    const button =
+                        document.createElement(
+                            "button"
+                        );
+
+
+                    button.innerHTML =
+                        option;
+
+
+                    button.onclick =
+                        function() {
+
+                            checkPronounAnswer(
+                                option
+                            );
+
+                        };
+
+
+                    options.appendChild(
+                        button
+                    );
+
+                }
+            );
+
+
+            document.getElementById(
+                "pronounResult"
+            ).innerHTML = "";
+
+        }
+
+
+        function checkPronounAnswer(answer) {
+
+            const question =
+                pronounQuestions[
+                    currentPronounQuestion
+                ];
+
+
+            const result =
+                document.getElementById(
+                    "pronounResult"
+                );
+
+
+            if (answer === question.answer) {
+
+                result.innerHTML =
+                    "✅ Correct! Well done!";
+
+            } else {
+
+                result.innerHTML =
+                    "❌ Try again!";
+
+            }
+
+        }
+
+
+        function nextPronounQuestion() {
+
+            if (
+                currentPronounQuestion
+                <
+                pronounQuestions.length - 1
+            ) {
+
+                currentPronounQuestion++;
+
+                showPronounQuestion();
+
+            } else {
+
+                document.getElementById(
+                    "pronounResult"
+                ).innerHTML =
+                    "🎉 Excellent! You finished the quiz!";
+
+            }
+
+        }
+
+
+        showPronounQuestion();
+
+    </script>
+
+</body>
+</html>

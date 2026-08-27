@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Present Simple - Easy English</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Easy English</h1>
+
+        <p>
+            with Abu Saif 📚
+        </p>
+
+
+        <!-- عنوان الدرس -->
+
+        <h2>3️⃣ Present Simple</h2>
+
+        <p>
+            نستخدم المضارع البسيط للتحدث عن
+            العادات والروتين والحقائق.
+        </p>
+
+
+        <!-- القاعدة الأساسية -->
+
+        <div class="lesson-note">
+
+            <h2>💡 Basic Rule</h2>
+
+            <p>
+                <strong>I / You / We / They → verb</strong>
+            </p>
+
+            <p>
+                <strong>He / She / It → verb + s</strong>
+            </p>
+
+        </div>
+
+
+        <!-- جدول المضارع البسيط -->
+
+        <table>
+
+            <tr>
+                <th>Subject</th>
+                <th>Verb</th>
+                <th>Example</th>
+                <th>المعنى</th>
+            </tr>
+
+            <tr>
+                <td>I</td>
+                <td>play</td>
+                <td>I play football.</td>
+                <td>أنا ألعب كرة القدم.</td>
+            </tr>
+
+            <tr>
+                <td>You</td>
+                <td>play</td>
+                <td>You play football.</td>
+                <td>أنت تلعب كرة القدم.</td>
+            </tr>
+
+            <tr>
+                <td>We</td>
+                <td>play</td>
+                <td>We play football.</td>
+                <td>نحن نلعب كرة القدم.</td>
+            </tr>
+
+            <tr>
+                <td>They</td>
+                <td>play</td>
+                <td>They play football.</td>
+                <td>هم يلعبون كرة القدم.</td>
+            </tr>
+
+            <tr>
+                <td>He</td>
+                <td>plays</td>
+                <td>He plays football.</td>
+                <td>هو يلعب كرة القدم.</td>
+            </tr>
+
+            <tr>
+                <td>She</td>
+                <td>plays</td>
+                <td>She plays football.</td>
+                <td>هي تلعب كرة القدم.</td>
+            </tr>
+
+            <tr>
+                <td>It</td>
+                <td>works</td>
+                <td>It works well.</td>
+                <td>إنه يعمل جيدًا.</td>
+            </tr>
+
+        </table>
+
+
+        <!-- أمثلة -->
+
+        <div class="examples">
+
+            <h2>✍️ Examples</h2>
+
+            <p>
+                I play football.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('I play football.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                She plays tennis.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('She plays tennis.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                They work every day.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('They work every day.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                He likes coffee.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('He likes coffee.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+            <p>
+                We study English.
+
+                <button
+                    class="sound-btn"
+                    onclick="speak('We study English.')"
+                    aria-label="Listen">
+                    🔊
+                </button>
+            </p>
+
+        </div>
+
+
+        <!-- النفي -->
+
+        <div class="lesson-note">
+
+            <h2>❌ Negative</h2>
+
+            <p>
+                I don't play football.
+            </p>
+
+            <p>
+                You don't like coffee.
+            </p>
+
+            <p>
+                They don't work here.
+            </p>
+
+            <p>
+                He doesn't play football.
+            </p>
+
+            <p>
+                She doesn't like coffee.
+            </p>
+
+        </div>
+
+
+        <!-- الأسئلة -->
+
+        <div class="lesson-note">
+
+            <h2>❓ Questions</h2>
+
+            <p>
+                Do you play football?
+            </p>
+
+            <p>
+                Do they work here?
+            </p>
+
+            <p>
+                Does he play football?
+            </p>
+
+            <p>
+                Does she like coffee?
+            </p>
+
+        </div>
+
+
+        <!-- ملاحظة مهمة -->
+
+        <div class="lesson-note">
+
+            <h2>⭐ Remember</h2>
+
+            <p>
+                بعد <strong>does / doesn't</strong>
+                نستخدم الفعل بدون <strong>s</strong>.
+            </p>
+
+            <p>
+                Does he <strong>play</strong> football? ✅
+            </p>
+
+            <p>
+                Does he <strong>plays</strong> football? ❌
+            </p>
+
+        </div>
+
+
+        <!-- الاختبار -->
+
+        <div class="quiz">
+
+            <h2>🧠 Present Simple Quiz</h2>
+
+            <p id="simpleProgress"></p>
+
+            <p id="simpleQuestion"></p>
+
+            <div
+                id="simpleOptions"
+                class="options">
+            </div>
+
+            <p id="simpleResult"></p>
+
+            <button onclick="nextSimpleQuestion()">
+                Next Question ➡️
+            </button>
+
+        </div>
+
+
+        <!-- إكمال الدرس -->
+
+        <div class="lesson-note">
+
+            <h2>🏆 Finish Lesson 3</h2>
+
+            <p>
+                عندما تنتهي من دراسة الدرس والاختبار،
+                اضغط على الزر لتسجيل الدرس كمكتمل.
+            </p>
+
+            <button onclick="completeLesson3()">
+                ✅ Complete Lesson 3
+            </button>
+
+            <p id="completionMessage"></p>
+
+        </div>
+
+
+        <!-- أزرار التنقل -->
+
+        <div class="navigation">
+
+            <button onclick="location.href='lesson2.html'">
+                ⬅️ Previous Lesson
+            </button>
+
+            <button onclick="location.href='index.html'">
+                🏠 Lessons
+            </button>
+
+            <button onclick="location.href='lesson4.html'">
+                Next Lesson ➡️
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
+
+    <!-- Start Lesson 3 Quiz -->
+
+    <script>
+        showSimpleQuestion();
+    </script>
+
+
+    <!-- Lesson 3 Progress -->
+
+    <script>
+
+        function completeLesson3() {
+
+            localStorage.setItem(
+                "lesson3Completed",
+                "true"
+            );
+
+            document.getElementById(
+                "completionMessage"
+            ).innerHTML =
+                "🎉 Excellent! Lesson 3 completed!";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
